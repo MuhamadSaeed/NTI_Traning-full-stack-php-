@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            background-color: #e0e0e0;
+            text-align: center;
+        }
+        input {
+            padding: 10px 12px;
+            margin: 10px 0;
+            width: 300px;
+        }
+        button {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        table {
+            margin: 20px auto ;
+            width: 50%;
+        }
+        table, th, td {
+            border: 1px solid #d8d8d8;
+            padding: 10px;
+        }
+        th {
+            background-color: #444444;
+        }
+    </style>
+
+</head>
+<body>
+    <input type="text" id="name" placeholder="write your name">
+    <br>
+    <button onclick="sayHi()">send</button>
+
+    <div id="hi"></div>
+
+    <table>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+        </tr>
+        <tr>
+            <td>moahemd</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>moahemd</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>moahemd</td>
+            <td>19</td>
+        </tr>
+    </table>
+
+    <script>
+        function sayHi() {
+            let name = document.getElementById('name').value;
+            
+            document.getElementById('hi').innerText = "hi " + name;
+            
+        }
+    </script>
+</body>
+</html>

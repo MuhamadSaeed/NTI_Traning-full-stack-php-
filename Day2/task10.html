@@ -4,36 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #grd {
+            background-color: rgb(148, 71, 219);
+            color: white;
+            padding: 10px 18px;
+            width: fit-content;
+            font-size: 22px;
+            margin-top: 20px;
+            transition: all .5s ease;
+        }
+        #grd:hover {
+            background-color: rgb(132, 0, 255);
+        } 
+    </style>
 </head>
 <body>
-    <h1>write your namme</h1>
-
-    <input type="number" id="grade" placeholder="write your grade from 1 to 100" min="1" max="100">
+    <h1>mohamed</h1>
+    <input type="number" min="1" max="100" id="grade" placeholder="write your grade from 1 to 100">
     <br>
     <button onclick="calcGrade()">clculate the grade</button>
-
-    <div id="grd"></div>
+    <div id="grd">your grade will be showen here</div>
 
     <script>
         function calcGrade() {
             let grade = document.getElementById('grade').value;
 
-            let grd = document.getElementById('grd').;
-
-            let message = '';
-            let bgColor = '';
-
             if (grade >= 90) {
-                message = 'ممتاز';
+                document.getElementById('grd').textContent = "excellent"
             } else if (grade >= 80) {
-                message = 'جيد جدًا';
+                document.getElementById('grd').textContent = "very good"
             } else if (grade >= 70) {
-                message = 'جيد';
+                document.getElementById('grd').textContent = "good"
             } else {
-                message = 'ضعيف';
+                document.getElementById('grd').textContent = "weak"
             }
-
-            grd.textContent = message;
         }
     </script>
 </body>
