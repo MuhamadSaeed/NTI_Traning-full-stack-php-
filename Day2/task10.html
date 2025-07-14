@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>write your namme</h1>
+
+    <input type="number" id="grade" placeholder="write your grade from 1 to 100" min="1" max="100">
+    <br>
+    <button onclick="calcGrade()">clculate the grade</button>
+
+    <div id="grd"></div>
+
+    <script>
+        function calcGrade() {
+            let grade = document.getElementById('grade').value;
+
+            let grd = document.getElementById('grd').;
+
+            let message = '';
+            let bgColor = '';
+
+            if (grade >= 90) {
+                message = 'ممتاز';
+            } else if (grade >= 80) {
+                message = 'جيد جدًا';
+            } else if (grade >= 70) {
+                message = 'جيد';
+            } else {
+                message = 'ضعيف';
+            }
+
+            grd.textContent = message;
+        }
+    </script>
+</body>
+</html>

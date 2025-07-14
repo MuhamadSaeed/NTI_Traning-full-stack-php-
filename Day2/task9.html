@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" oninput="showGrade()">
+    <button id="btn">show my grade</button>
+    <h1 id="heading"></h1>
+    <script>
+        function showGrade() {
+            let name = document.getElementById("input").value;
+            document.getElementById("btn").onclick = () => {
+                document.getElementById("heading").innerHTML = `hello ${name}, your grade is 90%`;
+            }
+        }
+    </script>
+</body>
+</html>
