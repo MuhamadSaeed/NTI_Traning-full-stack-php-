@@ -14,10 +14,10 @@
       <div class="row justify-content-center align-items-center vh-100">
           
           <form class="col-6 bg-light p-5 ">
-            <h1 class="text-center">User Information</h1>
+            <h1 class="text-center">user information</h1>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label"
-              >Email address</label
+              >email</label
             >
             <input
               type="email"
