@@ -1,0 +1,17 @@
+{
+    "name": "mohamedsaeed/cmx",
+    "autoload": {
+        "psr-4": {
+            "Mohamedsaeed\\Cmx\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MuhamadSaeed",
+            "email": "mohamedsaiedz2156287@gmail.com"
+        }
+    ],
+    "require": {
+        "dompdf/dompdf": "^3.1"
+    }
+}

@@ -4,7 +4,7 @@ class Book {
     public $name;
 
     public function read() {
-        echo "$this->name is reading $this->title right now";
+        echo "$this->name is reading $this->title rn";
     }
 }
 

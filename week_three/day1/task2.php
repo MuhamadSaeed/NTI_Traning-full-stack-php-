@@ -6,9 +6,9 @@ class Employee {
     public $bonus;
 
     public function printAllValues() {
-        echo "name: " . $this->name . "<br>";
-        echo "salary: " . $this->salary . "<br>";
-        echo "bonus: " . $this->bonus . "<br>";
+        echo "name: " . $this->name ;
+        echo "salary: " . $this->salary ;
+        echo "bonus: " . $this->bonus ;
     }
 }
 
